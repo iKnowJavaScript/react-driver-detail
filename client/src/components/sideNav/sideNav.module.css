@@ -1,0 +1,28 @@
+.side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 238);
+  width: 10%;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+}
+.otherContainer {
+  width: 100%;
+}
+
+.otherList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otherList li {
+  margin-bottom: 5rem;
+}
