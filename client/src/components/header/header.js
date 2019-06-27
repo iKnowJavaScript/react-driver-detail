@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './header.module.css';
 import { Link } from 'react-router-dom';
 
-
 export default function Header(props) {
   const {
     narator,
@@ -19,24 +18,22 @@ export default function Header(props) {
         </li>
         <li className={styles.otherNav}>
           <p>
-            <a
-              href="#"
+            <Link
+              to="./"
               rel="noopener noreferrer"
-              target="_blank"
               style={{ fontSize: '1.5rem', color: 'inherit' }}
             >
               <i class="far fa-bell" />
-            </a>
+            </Link>
           </p>
           <p>
-            <a
-              href="#"
+            <Link
+              to="./"
               rel="noopener noreferrer"
-              target="_blank"
               style={{ fontSize: '1rem', color: 'inherit' }}
             >
               <i class="fas fa-sync" />
-            </a>
+            </Link>
           </p>
           <p>
             <Link

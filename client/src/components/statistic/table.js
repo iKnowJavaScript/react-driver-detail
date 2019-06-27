@@ -1,5 +1,6 @@
 import React from 'react';
 import './table.css';
+import { Link } from 'react-router-dom';
 
 export default function Table(props) {
   const {
@@ -16,9 +17,9 @@ export default function Table(props) {
         </tr>
         <tr>
           <td>
-            <a href="#" rel="noopener noreferrer" target="_blank">
+            <Link to="./" rel="noopener noreferrer" target="_blank">
               info
-            </a>
+            </Link>
           </td>
           <td>Maria Anders</td>
           <td>Maria Anders</td>
@@ -26,9 +27,9 @@ export default function Table(props) {
         </tr>
         <tr>
           <td>
-            <a href="#" rel="noopener noreferrer" target="_blank">
+            <Link to="./" rel="noopener noreferrer" target="_blank">
               info
-            </a>
+            </Link>
           </td>
           <td>Christina Berglund</td>
           <td>Sweden</td>
