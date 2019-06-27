@@ -1,56 +1,56 @@
 import React from 'react';
 import styles from './sideNav.module.css';
+import { Link } from 'react-router-dom';
 
 export default function SideNav() {
   return (
     <div className={styles.side}>
       <div className={styles.logo}>
-        <a href="#" rel="noopener noreferrer" target="_blank">
-          <i className="fas fa-drum-steelpan" />
-        </a>
-        Logo
+        <Link
+          to="./"
+          rel="noopener noreferrer"
+          style={{ fontSize: '3rem', color: 'inherit' }}
+        >
+          <i class="fab fa-discourse" />
+        </Link>
       </div>
       <nav className={styles.otherContainer}>
         <ul className={styles.otherList}>
           <li>
-            <a
-              href="https://www.instagram.com/iam_remymartins/"
+            <Link
+              to="./"
               rel="noopener noreferrer"
-              target="_blank"
+              style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
-            </a>
-            Home
+              <i class="fas fa-house-damage" />
+            </Link>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/iam_remymartins/"
+            <Link
+              to="drivers"
               rel="noopener noreferrer"
-              target="_blank"
+              style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
-            </a>
-            Dashboarfffffd
+              <i class="fas fa-chart-line" />
+            </Link>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/iam_remymartins/"
+            <Link
+              to="trips"
               rel="noopener noreferrer"
-              target="_blank"
+              style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
-            </a>
-            Drivers
+              <i class="fas fa-users" />
+            </Link>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/iam_remymartins/"
+            <Link
+              to="./"
               rel="noopener noreferrer"
-              target="_blank"
+              style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
-            </a>
-            Reload
+              <i class="fas fa-plus" />
+            </Link>
           </li>
         </ul>
       </nav>

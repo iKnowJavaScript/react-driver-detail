@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './header.module.css';
+import { Link } from 'react-router-dom';
+
 
 export default function Header(props) {
   const {
@@ -18,23 +20,33 @@ export default function Header(props) {
         <li className={styles.otherNav}>
           <p>
             <a
-              href="https://www.instagram.com/iam_remymartins/"
+              href="#"
               rel="noopener noreferrer"
               target="_blank"
+              style={{ fontSize: '1.5rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
+              <i class="far fa-bell" />
             </a>
           </p>
           <p>
             <a
-              href="https://www.instagram.com/iam_remymartins/"
+              href="#"
               rel="noopener noreferrer"
               target="_blank"
+              style={{ fontSize: '1rem', color: 'inherit' }}
             >
-              <i className="fab fa-instagram" />
+              <i class="fas fa-sync" />
             </a>
           </p>
-          <p>image</p>
+          <p>
+            <Link
+              to="./"
+              rel="noopener noreferrer"
+              style={{ fontSize: '2.5rem', color: 'inherit' }}
+            >
+              <i class="fas fa-users-cog" />
+            </Link>
+          </p>
         </li>
       </ul>
     </nav>
