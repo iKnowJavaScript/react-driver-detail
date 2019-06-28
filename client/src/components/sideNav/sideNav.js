@@ -11,7 +11,7 @@ export default function SideNav() {
           rel="noopener noreferrer"
           style={{ fontSize: '3rem', color: 'inherit' }}
         >
-          <i class="fab fa-discourse" />
+          <i className="fab fa-discourse" />
         </Link>
       </div>
       <nav className={styles.otherContainer}>
@@ -22,7 +22,7 @@ export default function SideNav() {
               rel="noopener noreferrer"
               style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i class="fas fa-house-damage" />
+              <i className="fas fa-house-damage" />
             </Link>
           </li>
           <li>
@@ -31,7 +31,7 @@ export default function SideNav() {
               rel="noopener noreferrer"
               style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i class="fas fa-chart-line" />
+              <i className="fas fa-chart-line" />
             </Link>
           </li>
           <li>
@@ -40,7 +40,7 @@ export default function SideNav() {
               rel="noopener noreferrer"
               style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i class="fas fa-users" />
+              <i className="fas fa-users" />
             </Link>
           </li>
           <li>
@@ -49,7 +49,7 @@ export default function SideNav() {
               rel="noopener noreferrer"
               style={{ fontSize: '2rem', color: 'inherit' }}
             >
-              <i class="fas fa-plus" />
+              <i className="fas fa-plus" />
             </Link>
           </li>
         </ul>

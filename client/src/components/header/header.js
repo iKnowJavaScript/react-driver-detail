@@ -13,7 +13,7 @@ export default function Header(props) {
         <li className={styles.headerTitle} style={{ textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem' }}>{narator.toUpperCase()}</h2>
           <p style={{ fontStyle: 'italic' }}>
-            View and Review the Driver Datas
+            View and Review the Driver Data
           </p>
         </li>
         <li className={styles.otherNav}>
@@ -23,7 +23,7 @@ export default function Header(props) {
               rel="noopener noreferrer"
               style={{ fontSize: '1.5rem', color: 'inherit' }}
             >
-              <i class="far fa-bell" />
+              <i className="far fa-bell" />
             </Link>
           </p>
           <p>
@@ -32,7 +32,7 @@ export default function Header(props) {
               rel="noopener noreferrer"
               style={{ fontSize: '1rem', color: 'inherit' }}
             >
-              <i class="fas fa-sync" />
+              <i className="fas fa-sync" />
             </Link>
           </p>
           <p>
@@ -41,7 +41,7 @@ export default function Header(props) {
               rel="noopener noreferrer"
               style={{ fontSize: '2.5rem', color: 'inherit' }}
             >
-              <i class="fas fa-users-cog" />
+              <i className="fas fa-users-cog" />
             </Link>
           </p>
         </li>

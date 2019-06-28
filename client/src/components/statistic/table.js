@@ -5,36 +5,41 @@ import { Link } from 'react-router-dom';
 export default function Table(props) {
   const {
     style: { box, boxTable },
+    trips,
+    drivers,
   } = props;
+
+  const getDriverName = (drivers, id) => {
+    const driver = drivers.find(driver => driver.driverID === id);
+    if (!driver) return 'Unknown';
+    return driver.name;
+  };
+
   return (
     <div className={`${box} ${boxTable}`}>
       <table id="drivers">
-        <tr>
-          <th>Link</th>
-          <th>Driver</th>
-          <th>Customer</th>
-          <th>Amount</th>
-        </tr>
-        <tr>
-          <td>
-            <Link to="./" rel="noopener noreferrer" target="_blank">
-              info
-            </Link>
-          </td>
-          <td>Maria Anders</td>
-          <td>Maria Anders</td>
-          <td>$300</td>
-        </tr>
-        <tr>
-          <td>
-            <Link to="./" rel="noopener noreferrer" target="_blank">
-              info
-            </Link>
-          </td>
-          <td>Christina Berglund</td>
-          <td>Sweden</td>
-          <td>$400</td>
-        </tr>
+        <tbody>
+          <tr>
+            <th>Info</th>
+            <th>Driver Name</th>
+            <th>Customer</th>
+            <th>Amount</th>
+          </tr>
+          {trips.map((trip, index) => {
+            return (
+              <tr key={index}>
+                <td style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                  <Link to="./trips" rel="noopener noreferrer">
+                    <i className="fas fa-info" />
+                  </Link>
+                </td>
+                <td>{getDriverName(drivers, trip.driverID)}</td>
+                <td>{trip.user.name}</td>
+                <td>N{trip.billedAmount}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );

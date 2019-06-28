@@ -1,3 +1,6 @@
+body {
+  height: 100%;
+}
 .search__input {
   width: 70%;
   padding: 8px 20px;
@@ -45,9 +48,8 @@
 .driverList {
   position: relative;
   background-color: #fff;
-  height: 100%;
   align-items: center;
-  width: 30%;
+  width: 40%;
   padding-top: 1rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -55,7 +57,7 @@
 
 .displayDriver {
   padding-top: 1rem;
-  width: 70%;
+  width: 60%;
   position: relative;
   height: 100%;
   border-top: 1px solid rgb(235, 235, 238);
@@ -67,15 +69,16 @@
 .links {
   margin-top: 60px;
   overflow-y: scroll;
+  height: 70vh;
 }
 
 .link {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-left: 2rem;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 0.5em;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5em;
   border-radius: 7px;
   background-color: #ebebee;
   margin-bottom: 10px;
@@ -98,5 +101,94 @@
 
 .displayDetail {
   margin-top: 60px;
-  padding: 0 2rem;
+}
+
+.profileContainer {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.profileNarator {
+  font-size: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_avatar {
+  /* border: 2px solid red; */
+  width: 100px;
+  margin-right: 2rem;
+}
+.text-muted {
+  font-size: 0.8rem;
+  margin: 0rem 3rem;
+}
+
+.profile_avatar img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileHeader h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.driverInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  flex: 1;
+  padding-top: 0;
+}
+
+.driverInfo * {
+  margin: 0.3rem;
+}
+
+.driverInfo * {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.driverInfo * {
+  background-color: #f2f2f2;
+}
+
+.driverInfo p:hover > .narate,
+.driverInfo p:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.infoHeader {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: unset;
+}
+
+.driverInfo p {
+  display: flex;
+  align-items: center;
+}
+
+.narate {
+  margin-left: 2rem;
+  flex: 1;
 }
