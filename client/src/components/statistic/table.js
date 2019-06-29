@@ -14,7 +14,8 @@ export default function Table(props) {
     if (!driver) return 'Unknown';
     return driver.name;
   };
-
+  // console.log(trips);
+  
   return (
     <div className={`${box} ${boxTable}`}>
       <table id="drivers">

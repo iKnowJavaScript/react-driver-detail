@@ -192,3 +192,21 @@ body {
   margin-left: 2rem;
   flex: 1;
 }
+
+.links li {
+  background-color: #a7acb7;
+  background-color: #ebebee;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.links li:hover {
+  background-color: #989da5;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.02) translateY(-4px);
+}
+
+.active {
+  background-color: red !important;
+}

@@ -12,7 +12,7 @@ const Navigator = () => {
       <Switch>
         <Route exact path="/" component={Dashboard} />
         <Route path="/drivers" component={DriversPage} />
-        <Route path="/Trips/:tripId" component={Trips} />
+        <Route path="/trip/:tripId" component={Trips} />
         <Route render={() => <h1>Page Not Found</h1>} />
       </Switch>
     </Router>
@@ -20,7 +20,6 @@ const Navigator = () => {
 };
 
 export default Navigator;
-
 
 // const TripInfo(props) => {
 //   const {match:{params}} = props

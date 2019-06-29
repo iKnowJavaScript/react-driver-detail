@@ -11,6 +11,7 @@ export default function DriverSection(props) {
 
   const [drivers, setDrivers] = useState([]);
   const [clickDriver, setClickDriver] = useState({});
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     const fetchDrivers = async () => {
@@ -23,9 +24,10 @@ export default function DriverSection(props) {
 
   const displayClick = driver => {
     setClickDriver(driver);
+    setActive(() => !active);
   };
+  // console.log(11111)
   // console.log(clickDriver);
-
   return (
     <div className={`${box} ${boxSection} driverContainer`}>
       <div className="driverList driverBox">
@@ -34,7 +36,7 @@ export default function DriverSection(props) {
           {drivers.map((driver, index) => {
             return (
               <li
-                className="link"
+                className={`link ${active ? 'active' : ''}`}
                 key={index}
                 data-id={index}
                 onClick={() => displayClick(driver)}
@@ -87,7 +89,10 @@ export default function DriverSection(props) {
               DRIVER ID: <span className="narate">{clickDriver.driverID}</span>
             </p>
             <p className="DOB">
-              DOB: <span className="narate">{new Date(clickDriver.DOB).toLocaleDateString()}</span>
+              DOB:{' '}
+              <span className="narate">
+                {new Date(clickDriver.DOB).toLocaleDateString()}
+              </span>
             </p>
             <p className="agent">
               AGENT: <span className="narate">{clickDriver.agent}</span>
