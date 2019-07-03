@@ -21,6 +21,7 @@ body {
   color: #444;
   margin-right: 4%;
   background-color: rgb(217, 218, 221);
+
 }
 
 .box {
@@ -28,6 +29,7 @@ body {
   color: rgb(63, 61, 61);
   border-radius: 5px;
   padding: 10px 0 10px 10px;
+
 }
 
 .boxHeader {
@@ -43,6 +45,5 @@ body {
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   overflow-y: scroll;
 }
-
 
 /* to here */

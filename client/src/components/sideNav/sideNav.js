@@ -6,49 +6,37 @@ export default function SideNav() {
   return (
     <div className={styles.side}>
       <div className={styles.logo}>
-        <Link
-          to="./"
-          rel="noopener noreferrer"
-          style={{ fontSize: '3rem', color: 'inherit' }}
-        >
+        <Link to="/" rel="noopener noreferrer">
           <i className="fab fa-discourse" />
         </Link>
       </div>
       <nav className={styles.otherContainer}>
         <ul className={styles.otherList}>
           <li>
-            <Link
-              to="./"
-              rel="noopener noreferrer"
-              style={{ fontSize: '2rem', color: 'inherit' }}
-            >
+            <Link to="/" rel="noopener noreferrer" className={styles.sideLink}>
               <i className="fas fa-house-damage" />
             </Link>
           </li>
           <li>
             <Link
-              to="drivers"
+              to="/drivers"
               rel="noopener noreferrer"
-              style={{ fontSize: '2rem', color: 'inherit' }}
+              className={styles.sideLink}
             >
               <i className="fas fa-chart-line" />
             </Link>
           </li>
           <li>
             <Link
-              to="trips"
+              to="/trip"
               rel="noopener noreferrer"
-              style={{ fontSize: '2rem', color: 'inherit' }}
+              className={styles.sideLink}
             >
               <i className="fas fa-users" />
             </Link>
           </li>
           <li>
-            <Link
-              to="./"
-              rel="noopener noreferrer"
-              style={{ fontSize: '2rem', color: 'inherit' }}
-            >
+            <Link to="/" rel="noopener noreferrer" className={styles.sideLink}>
               <i className="fas fa-plus" />
             </Link>
           </li>
@@ -57,3 +45,5 @@ export default function SideNav() {
     </div>
   );
 }
+
+// rgb(81, 82, 83);

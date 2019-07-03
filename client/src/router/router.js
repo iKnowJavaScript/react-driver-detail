@@ -13,17 +13,21 @@ const Navigator = () => {
         <Route exact path="/" component={Dashboard} />
         <Route path="/drivers" component={DriversPage} />
         <Route path="/trip/:tripId" component={Trips} />
-        <Route render={() => <h1>Page Not Found</h1>} />
+        <Route
+          render={() => (
+            <h1
+              style={{
+                fontSize: '5rem',
+                textAlign: 'center',
+              }}
+            >
+              Page Not Found
+            </h1>
+          )}
+        />
       </Switch>
     </Router>
   );
 };
 
 export default Navigator;
-
-// const TripInfo(props) => {
-//   const {match:{params}} = props
-//   get('api/trips/param.tripId')
-// }
-
-// <Route path="/Trips:param" component={Trips} /> //param i.e tripId - then link info to paramId === trip id

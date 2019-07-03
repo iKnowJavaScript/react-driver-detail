@@ -11,7 +11,7 @@ function DriversPage() {
     <div className={styles.flexContainer}>
       <SideNav />
       <div className={styles.wrapper}>
-        <Header narator={'DashBoard'} style={styles} />
+        <Header narator={'Drivers'} style={styles} />
         <DriverSection style={styles} />
       </div>
     </div>
@@ -19,6 +19,3 @@ function DriversPage() {
 }
 
 export default DriversPage;
-
-/* <Content styles={styles.boxOne} style={styles} />
-<NumberNav style={styles} /> */

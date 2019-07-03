@@ -1,6 +1,7 @@
 import React from 'react';
 import { Circle, CircleTwo } from './charts/circle';
 import Graph from './charts/graph';
+import styles from './content.module.css';
 
 export default function Content(props) {
   return (
@@ -11,20 +12,11 @@ export default function Content(props) {
   );
 }
 
-function Main(props) {
-  const {
-    style: { box, boxDaily },
-  } = props;
+function Main({ style }) {
+  const { box, boxDaily } = style;
   return (
-    <main className={`${box} ${boxDaily}`}>
-      <div
-        className="table-container"
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignContent: 'center',
-        }}
-      >
+    <main className={`${box} ${boxDaily} ${styles.center}`}>
+      <div className={styles.tableContainer}>
         <Graph />
       </div>
     </main>
@@ -50,8 +42,6 @@ function Aside(props) {
       <div
         style={{
           width: '100%',
-          border: '0px solid white',
-          borderBottomColor: 'green',
           backgroundColor: 'rgb(235, 235, 238)',
           display: 'flex',
           alignItems: 'center',

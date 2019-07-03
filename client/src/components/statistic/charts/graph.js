@@ -9,18 +9,6 @@ const colors = scaleOrdinal(schemeCategory10).range();
 
 const graphData = [
   {
-    name: 'Page A',
-    uv: 4000,
-    female: 2400,
-    male: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    female: 1398,
-    male: 2210,
-  },
-  {
     name: 'Page C',
     uv: 2000,
     female: 9800,
@@ -43,12 +31,6 @@ const graphData = [
     uv: 2390,
     female: 3800,
     male: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    female: 4300,
-    male: 2100,
   },
 ];
 
@@ -79,8 +61,8 @@ class Graph extends PureComponent {
   render() {
     return (
       <BarChart
-        width={500}
-        height={300}
+        width={400}
+        height={250}
         data={graphData}
         margin={{
           top: 20,

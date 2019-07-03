@@ -56,7 +56,7 @@ body {
 }
 
 .displayDriver {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   width: 60%;
   position: relative;
   height: 100%;
@@ -64,12 +64,14 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #ebebee;
+  font-family: 'Cairo', sans-serif;
 }
 
 .links {
   margin-top: 60px;
   overflow-y: scroll;
   height: 70vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .link {
@@ -122,18 +124,20 @@ body {
 }
 
 .profile_avatar {
-  /* border: 2px solid red; */
   width: 100px;
   margin-right: 2rem;
 }
 .text-muted {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0rem 3rem;
 }
 
 .profile_avatar img {
   width: 100%;
   border-radius: 100%;
+}
+.avatarFont {
+  font-size: 4rem;
 }
 
 .profileHeader {
@@ -142,8 +146,7 @@ body {
 }
 
 .profileHeader h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
   position: relative;
 }
 
@@ -153,7 +156,7 @@ body {
   margin: 1rem;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   flex: 1;
   padding-top: 0;
 }
@@ -164,7 +167,8 @@ body {
 
 .driverInfo * {
   padding: 4px;
-  border-radius: 5px;
+  border-radius: 50px;
+  padding-left: 30px;
 }
 
 .driverInfo * {
@@ -189,7 +193,7 @@ body {
 }
 
 .narate {
-  margin-left: 2rem;
+  margin-left: 10px;
   flex: 1;
 }
 
@@ -208,5 +212,5 @@ body {
 }
 
 .active {
-  background-color: red !important;
+  background-color: #989da5 !important;
 }

@@ -4,14 +4,12 @@ import './driverSection.css';
 
 // axios.get('/api/drivers').then(data => console.log(data.data.data));
 
-export default function DriverSection(props) {
-  const {
-    style: { box, boxSection },
-  } = props;
+export default function DriverSection({ style }) {
+  const { box, boxSection } = style;
 
   const [drivers, setDrivers] = useState([]);
   const [clickDriver, setClickDriver] = useState({});
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const fetchDrivers = async () => {
@@ -22,12 +20,11 @@ export default function DriverSection(props) {
     fetchDrivers();
   }, []); // only runs when it mounts
 
-  const displayClick = driver => {
+  const displayClick = (driver, index) => {
     setClickDriver(driver);
-    setActive(() => !active);
+    setActive(index);
   };
-  // console.log(11111)
-  // console.log(clickDriver);
+
   return (
     <div className={`${box} ${boxSection} driverContainer`}>
       <div className="driverList driverBox">
@@ -36,10 +33,10 @@ export default function DriverSection(props) {
           {drivers.map((driver, index) => {
             return (
               <li
-                className={`link ${active ? 'active' : ''}`}
+                onClick={() => displayClick(driver, index)}
+                className={`link ${index === active ? 'active' : ''}`}
                 key={index}
                 data-id={index}
-                onClick={() => displayClick(driver)}
               >
                 <div className="link-pic">
                   <i className="fas fa-user-tie" />
@@ -60,10 +57,7 @@ export default function DriverSection(props) {
           <div className="profileContainer">
             <div className="profile">
               <div className="profile_avatar">
-                <img
-                  src="https://bootdey.com/img/Content/avatar/avatar5.png"
-                  alt="..."
-                />
+                <i className="fas fa-user-tie avatarFont" />
               </div>
               <div className="profileHeader">
                 <h3>{clickDriver.name}</h3>

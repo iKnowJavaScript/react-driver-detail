@@ -1,0 +1,11 @@
+.tableContainer {
+  display: 'flex';
+  justify-content: 'center';
+  align-content: 'center';
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  /* height: 90%; */
+}

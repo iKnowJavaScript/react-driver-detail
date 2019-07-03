@@ -1,6 +1,7 @@
 .navHeader {
   padding-left: 2rem;
   padding-right: 2rem;
+  font-family: 'Monda', sans-serif;
 }
 .header {
   display: flex;

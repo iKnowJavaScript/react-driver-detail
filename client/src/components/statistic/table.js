@@ -14,23 +14,24 @@ export default function Table(props) {
     if (!driver) return 'Unknown';
     return driver.name;
   };
-  // console.log(trips);
-  
+
   return (
-    <div className={`${box} ${boxTable}`}>
+    <div className={`${box} ${boxTable} drivers`}>
       <table id="drivers">
-        <tbody>
+        <thead>
           <tr>
             <th>Info</th>
             <th>Driver Name</th>
             <th>Customer</th>
             <th>Amount</th>
           </tr>
+        </thead>
+        <tbody>
           {trips.map((trip, index) => {
             return (
               <tr key={index}>
-                <td style={{ textAlign: 'center', fontSize: '0.8rem' }}>
-                  <Link to="./trips" rel="noopener noreferrer">
+                <td className="tableInfo">
+                  <Link to={`/trip/${trip.tripID}`} rel="noopener noreferrer">
                     <i className="fas fa-info" />
                   </Link>
                 </td>
