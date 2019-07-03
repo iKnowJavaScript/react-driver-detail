@@ -1,0 +1,55 @@
+#drivers {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+
+#drivers {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#drivers td,
+#drivers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#drivers td {
+  text-align: 'center';
+  font-size: '0.8rem';
+}
+
+#drivers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#drivers tr:hover {
+  background-color: #ddd;
+}
+
+#drivers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(81, 82, 83);
+  color: white;
+}
+
+.tableInfo {
+  text-align: center;
+  width: 2px;
+}
+
+th:first-child,
+#drivers,
+.drivers {
+  border-top-left-radius: 10px;
+}
+
+th:last-child,
+#drivers,
+.drivers {
+  border-top-right-radius: 10px;
+}

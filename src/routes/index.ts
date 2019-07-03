@@ -13,7 +13,7 @@ router.get('/trips', (_req, res) => {
   res.status(200).json({ data: trips });
 });
 
-router.get('/trip/:tripID', (req, res) => {
+router.get('/trip/:z', (req, res) => {
   try {
     const data = getTrip(req.params.tripID);
 

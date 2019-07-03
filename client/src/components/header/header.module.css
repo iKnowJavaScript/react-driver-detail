@@ -1,0 +1,23 @@
+.navHeader {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Monda', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  text-transform: capitalize;
+}
+
+.otherNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.otherNav p {
+  margin-left: 2rem;
+  font-size: 2rem;
+}

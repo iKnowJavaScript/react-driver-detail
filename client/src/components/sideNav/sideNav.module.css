@@ -1,0 +1,51 @@
+.side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 238);
+  width: 10%;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+}
+.otherContainer {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.otherList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.otherList li {
+  margin-bottom: 5rem;
+  color: rgb(81, 82, 83);
+  font-size: 2rem;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.otherList li:hover,
+.logo:hover {
+  color: #2091ee;
+}
+
+.logo {
+  font-size: 3.5rem;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.otherList li:hover,
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.02) translateY(-4px);
+}
